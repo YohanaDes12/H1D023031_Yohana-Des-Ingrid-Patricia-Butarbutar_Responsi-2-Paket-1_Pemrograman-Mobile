@@ -1,107 +1,169 @@
-# 📱 Aplikasi Inventaris Komputer Yohana
-Aplikasi Inventaris Komputer Yohana adalah aplikasi mobile berbasis Flutter yang digunakan untuk mengelola inventaris perangkat komputer secara efisien. Aplikasi ini menyediakan fitur autentikasi pengguna serta CRUD (Create, Read, Update, Delete) untuk data inventaris.
+# 📱 Aplikasi Inventaris Komputer — Yohana
+
+Aplikasi **Inventaris Komputer Yohana** adalah aplikasi mobile berbasis **Flutter** yang digunakan untuk mengelola inventaris perangkat komputer secara efisien. Aplikasi ini dilengkapi fitur autentikasi dan operasi CRUD (Create, Read, Update, Delete) data inventaris.
+
+---
 
 ## 👩‍💻 Identitas Pengembang
-Detail Informasi Nama Yohana Des Ingrid Patricia Butarbutar NIM H1D023031 Shift Baru E Shift Asal A
+
+| Detail | Informasi |
+|-------|-----------|
+| **Nama** | Yohana Des Ingrid Patricia Butarbutar |
+| **NIM** | H1D023031 |
+| **Shift Baru** | E |
+| **Shift Asal** | A |
+
+---
 
 ## 📌 Deskripsi Singkat Aplikasi
-Aplikasi ini dibuat untuk mempermudah pengelolaan inventaris komputer, seperti monitor, keyboard, dan perangkat lainnya. Pengguna dapat:
+Aplikasi ini dibuat untuk mempermudah pengelolaan inventaris komputer seperti monitor, keyboard, CPU, mouse, dan perangkat lainnya.
 
-- Mendaftar akun baru
-- Login ke aplikasi
-- Melihat daftar inventaris
-- Menambah inventaris baru
-- Mengubah inventaris
-- Menghapus inventaris
-- Logout dari aplikasi
-UI dibuat menggunakan prinsip Material Design 3, dengan tampilan modern dan clean.
+Pengguna dapat melakukan:
 
-## 🎥 Video Demo Aplikasi
-👉 Link Video Demo: tempel link video Anda di sini
+- Registrasi akun baru  
+- Login  
+- Melihat daftar inventaris  
+- Menambah inventaris  
+- Mengubah inventaris  
+- Menghapus inventaris  
+- Logout  
 
-Video demo mencakup:
-- Registrasi akun
-- Login
-- Menampilkan daftar inventaris
-- Menambah data inventaris
-- Edit inventaris
-- Hapus inventaris
-- Logout
+UI dibangun menggunakan **Material Design 3** dengan tampilan yang modern dan clean.
 
-🔌 Spesifikasi API (Backend)
+---
 
-Base URL: http://localhost:3000
+## 🎥 Demo Aplikasi
 
-Authentication Endpoints POST /auth/register { "nama": "string", "email": "string", "password": "string" }
-POST /auth/login { "email": "string", "password": "string" }
+### 👉 Preview Demo
+![Demo Aplikasi](https://github.com/YohanaDes12/H1D023031_Yohana-Des-Ingrid-Patricia-Butarbutar_Responsi-2-Paket-1_Pemrograman-Mobile/blob/main/demo-responsi-2_paket-1_pemrograman-mobile.gif)
 
-Inventaris Endpoints
-GET /inventaris — Menampilkan semua inventaris
+Demo mencakup:
+- Registrasi akun  
+- Login  
+- Menampilkan daftar inventaris  
+- Menambah data  
+- Mengedit data  
+- Menghapus data  
+- Logout  
 
-POST /inventaris — Menambah inventaris
+---
 
-PUT /inventaris/{id} — Update inventaris
+## 🔌 Spesifikasi API (Backend)
 
-DELETE /inventaris/{id} — Hapus inventaris
+### **Base URL**
+http://localhost:5000 
 
-🧩 Struktur Folder lib/ ├── main.dart
-├── models/ │ └── inventaris.dart
-├── pages/ │ ├── login_page.dart
-│ ├── register_page.dart
-│ ├── home_page.dart
-│ ├── add_page.dart
-│ └── edit_page.dart
-└── services/ ├── auth_service.dart
-└── inventaris_service.dart
+### **Authentication Endpoints**
+#### Register
+POST /auth/register
+{
+"nama": "string",
+"email": "string",
+"password": "string"
+}
 
-🛠 Teknologi yang Digunakan
-Teknologi Keterangan Flutter Framework UI Dart 3.9.2+ Bahasa pemrograman HTTP Package Akses REST API Node.js / Express API Backend MySQL / PostgreSQL Database 🌟 Fitur Aplikasi 🔐 Autentikasi
+#### Login
+POST /auth/login
+{
+"email": "string",
+"password": "string"
+}
 
-Register
 
-Login
+---
 
-Logout
+### **Inventaris Endpoints**
 
-📦 CRUD Inventaris
-Menampilkan data inventaris
+#### Get All
+GET /inventaris
 
-Input data inventaris
+#### Create
+POST /inventaris
 
-Edit data
+#### Update
+PUT /inventaris/{id}
 
-Hapus data
+#### Delete
+DELETE /inventaris/{id}
 
-🎨 Pengalaman Pengguna
-Snackbar notifikasi
+---
 
-Validasi form
+## 🧩 Struktur Folder
 
-Loading indicator
 
-Date picker
+---
 
-Format harga rupiah
+## 🛠 Teknologi yang Digunakan
 
-📝 Cara Menjalankan Aplikasi
-Jalankan backend pada localhost:3000
+| Teknologi | Keterangan |
+|----------|------------|
+| Flutter | Framework UI |
+| Dart 3.9.2+ | Bahasa pemrograman |
+| HTTP Package | Akses REST API |
+| Node.js / Express | Backend API |
+| MySQL / PostgreSQL | Database |
 
-Install dependencies
+---
 
+## 🌟 Fitur Aplikasi
+
+### 🔐 Autentikasi
+- Register  
+- Login  
+- Logout  
+
+### 📦 CRUD Inventaris
+- Menampilkan daftar inventaris  
+- Menambah data baru  
+- Edit data inventaris  
+- Hapus data  
+
+### 🎨 Pengalaman Pengguna
+- Snackbar notifikasi  
+- Validasi Form  
+- Loading Indicator  
+- Date Picker  
+- Format Harga Rupiah  
+
+---
+
+## 📝 Cara Menjalankan Aplikasi
+
+### 1️⃣ Jalankan Backend
+Pastikan backend berjalan pada:
+http://localhost:5000
+### 2️⃣ Install Dependencies
 flutter pub get
 
-Jalankan aplikasi
+shell
+Salin kode
 
+### 3️⃣ Jalankan Aplikasi
 flutter run
 
-Build release APK
+shell
+Salin kode
 
+### 4️⃣ Build APK Release
 flutter build apk --release
 
-📦 Dependencies (pubspec.yaml)
-dependencies: flutter: sdk: flutter http: ^1.1.0 cupertino_icons: ^1.0.8
+yaml
+Salin kode
 
-dev_dependencies: flutter_lints: ^5.0.0
+---
 
+## 📦 Dependencies (pubspec.yaml)
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.1.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
 🙌 Penutup
-Aplikasi Inventaris Komputer ini dibuat oleh Yohana Des Ingrid Patricia Butarbutar sebagai bagian dari pembelajaran Flutter dan REST API.
+Aplikasi Inventaris Komputer ini dikembangkan oleh Yohana Des Ingrid Patricia Butarbutar sebagai bagian dari pembelajaran Flutter dan REST API dalam mata kuliah Pemrograman Mobile.
+
+
