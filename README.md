@@ -37,8 +37,6 @@ UI dibangun menggunakan **Material Design 3** dengan tampilan yang modern dan cl
 ### 👉 Preview Demo
 <img src="https://github.com/YohanaDes12/H1D023031_Yohana-Des-Ingrid-Patricia-Butarbutar_Responsi-2-Paket-1_Pemrograman-Mobile/blob/main/demo-responsi-2_paket-1_pemrograman-mobile.gif" width="500">
 
-![Demo Aplikasi]()
-
 Demo mencakup:
 - Registrasi akun  
 - Login  
@@ -58,22 +56,21 @@ http://localhost:5500
 ### **Authentication Endpoints**
 #### Register
 POST /auth/register
-POST /auth/register
-            {
-              "nama": "string",
-              "email": "string",
-              "password": "string"
-            }
+{
+"nama": "string",
+"email": "string",
+"password": "string"
+}
 - Menjelaskan endpoint registrasi.
 - Data dikirim dalam format JSON.
 - Method POST digunakan untuk mengirim data baru.
   
 #### Login
 POST /auth/login
-            {
-              "email": "string",
-              "password": "string"
-            }
+{
+"email": "string",
+"password": "string"
+}
 ---
 
 ### **Inventaris Endpoints**
