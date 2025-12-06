@@ -1,46 +1,32 @@
-📱 Aplikasi Inventaris Komputer Yohana
+# 📱 Aplikasi Inventaris Komputer Yohana
 Aplikasi Inventaris Komputer Yohana adalah aplikasi mobile berbasis Flutter yang digunakan untuk mengelola inventaris perangkat komputer secara efisien. Aplikasi ini menyediakan fitur autentikasi pengguna serta CRUD (Create, Read, Update, Delete) untuk data inventaris.
 
-👩‍💻 Identitas Pengembang
+## 👩‍💻 Identitas Pengembang
 Detail Informasi Nama Yohana Des Ingrid Patricia Butarbutar NIM H1D023031 Shift Baru E Shift Asal A
 
-📌 Deskripsi Singkat Aplikasi
+## 📌 Deskripsi Singkat Aplikasi
 Aplikasi ini dibuat untuk mempermudah pengelolaan inventaris komputer, seperti monitor, keyboard, dan perangkat lainnya. Pengguna dapat:
 
-Mendaftar akun baru
-
-Login ke aplikasi
-
-Melihat daftar inventaris
-
-Menambah inventaris baru
-
-Mengubah inventaris
-
-Menghapus inventaris
-
-Logout dari aplikasi
-
+- Mendaftar akun baru
+- Login ke aplikasi
+- Melihat daftar inventaris
+- Menambah inventaris baru
+- Mengubah inventaris
+- Menghapus inventaris
+- Logout dari aplikasi
 UI dibuat menggunakan prinsip Material Design 3, dengan tampilan modern dan clean.
 
-🎥 Video Demo Aplikasi
+## 🎥 Video Demo Aplikasi
 👉 Link Video Demo: tempel link video Anda di sini
 
 Video demo mencakup:
-
-Registrasi akun
-
-Login
-
-Menampilkan daftar inventaris
-
-Menambah data inventaris
-
-Edit inventaris
-
-Hapus inventaris
-
-Logout
+- Registrasi akun
+- Login
+- Menampilkan daftar inventaris
+- Menambah data inventaris
+- Edit inventaris
+- Hapus inventaris
+- Logout
 
 🔌 Spesifikasi API (Backend)
 
