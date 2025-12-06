@@ -51,60 +51,60 @@ Demo mencakup:
 ## 🔌 Spesifikasi API (Backend)
 
 ### **Base URL**
-http://localhost:5000 
+http://localhost:5500 
 
 ### **Authentication Endpoints**
 #### Register
 POST /auth/register
 POST /auth/register
-{
-  "nama": "string",
-  "email": "string",
-  "password": "string"
-}
+  {
+    "nama": "string",
+    "email": "string",
+    "password": "string"
+  }
 - Menjelaskan endpoint registrasi.
 - Data dikirim dalam format JSON.
 - Method POST digunakan untuk mengirim data baru.
   
 #### Login
 POST /auth/login
-{
-"email": "string",
-"password": "string"
-}
+  {
+    "email": "string",
+    "password": "string"
+  }
 
 
 ---
 
 ### **Inventaris Endpoints**
-GET /inventaris
-POST /inventaris
-PUT /inventaris/{id}
-DELETE /inventaris/{id}
+  GET /inventaris
+  POST /inventaris
+  PUT /inventaris/{id}
+  DELETE /inventaris/{id}
 
-- GET → ambil data
-- POST → tambah data
-- PUT → update data berdasarkan ID
-- DELETE → hapus data berdasarkan ID
+  - GET → ambil data
+  - POST → tambah data
+  - PUT → update data berdasarkan ID
+  - DELETE → hapus data berdasarkan ID
 
 ---
 
 ## 🧩 Struktur Folder
-lib/
-├── constants/
-│   └── app_constants.dart
-├── models/
-│   └── inventaris_model.dart
-├── screens/
-│   ├── auth/
-│   │   ├── login_screen.dart
-│   │   └── register_screen.dart
-│   └── inventory/
-│       ├── form_screen.dart
-│       └── home_screen.dart
-├── services/
-│   └── api_services.dart
-└── main.dart
+    lib/
+    ├── constants/
+    │   └── app_constants.dart
+    ├── models/
+    │   └── inventaris_model.dart
+    ├── screens/
+    │   ├── auth/
+    │   │   ├── login_screen.dart
+    │   │   └── register_screen.dart
+    │   └── inventory/
+    │       ├── form_screen.dart
+    │       └── home_screen.dart
+    ├── services/
+    │   └── api_services.dart
+    └── main.dart
 
 ---
 
@@ -146,11 +146,11 @@ lib/
 
 ### 1️⃣ Jalankan Backend
 Pastikan backend berjalan pada:
-http://localhost:5000
+http://localhost:5500
 ### 2️⃣ Jalankan Aplikasi
-flutter pub get
-flutter run
-flutter build apk --release
+  flutter pub get
+  flutter run
+  flutter build apk --release
 
 - Perintah CLI Flutter untuk menjalankan aplikasi.
 - flutter pub get → mengunduh dependency.
