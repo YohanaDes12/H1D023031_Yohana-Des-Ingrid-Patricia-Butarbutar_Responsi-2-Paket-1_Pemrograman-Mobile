@@ -35,7 +35,9 @@ UI dibangun menggunakan **Material Design 3** dengan tampilan yang modern dan cl
 ## 🎥 Demo Aplikasi
 
 ### 👉 Preview Demo
-![Demo Aplikasi](https://github.com/YohanaDes12/H1D023031_Yohana-Des-Ingrid-Patricia-Butarbutar_Responsi-2-Paket-1_Pemrograman-Mobile/blob/main/demo-responsi-2_paket-1_pemrograman-mobile.gif)
+<img src="https://github.com/YohanaDes12/H1D023031_Yohana-Des-Ingrid-Patricia-Butarbutar_Responsi-2-Paket-1_Pemrograman-Mobile/blob/main/demo-responsi-2_paket-1_pemrograman-mobile.gif" width="300">
+
+![Demo Aplikasi]()
 
 Demo mencakup:
 - Registrasi akun  
@@ -57,30 +59,30 @@ http://localhost:5500
 #### Register
 POST /auth/register
 POST /auth/register
-  {
-    "nama": "string",
-    "email": "string",
-    "password": "string"
-  }
+    {
+      "nama": "string",
+      "email": "string",
+      "password": "string"
+    }
 - Menjelaskan endpoint registrasi.
 - Data dikirim dalam format JSON.
 - Method POST digunakan untuk mengirim data baru.
   
 #### Login
 POST /auth/login
-  {
-    "email": "string",
-    "password": "string"
-  }
+    {
+      "email": "string",
+      "password": "string"
+    }
 
 
 ---
 
 ### **Inventaris Endpoints**
-  GET /inventaris
-  POST /inventaris
-  PUT /inventaris/{id}
-  DELETE /inventaris/{id}
+    GET /inventaris
+    POST /inventaris
+    PUT /inventaris/{id}
+    DELETE /inventaris/{id}
 
   - GET → ambil data
   - POST → tambah data
@@ -148,9 +150,9 @@ POST /auth/login
 Pastikan backend berjalan pada:
 http://localhost:5500
 ### 2️⃣ Jalankan Aplikasi
-  flutter pub get
-  flutter run
-  flutter build apk --release
+    flutter pub get
+    flutter run
+    flutter build apk --release
 
 - Perintah CLI Flutter untuk menjalankan aplikasi.
 - flutter pub get → mengunduh dependency.
@@ -160,10 +162,10 @@ http://localhost:5500
 
 ## 📦 Dependencies (pubspec.yaml)
 
-dependencies:
-  flutter:
-    sdk: flutter
-  http: ^1.1.0
+    dependencies:
+      flutter:
+        sdk: flutter
+      http: ^1.1.0
 
 - Ditulis dalam format YAML (indentasi penting!).
 - http digunakan untuk memanggil REST API.
