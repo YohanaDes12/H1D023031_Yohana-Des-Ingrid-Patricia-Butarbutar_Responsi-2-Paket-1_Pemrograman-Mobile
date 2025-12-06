@@ -56,12 +56,16 @@ http://localhost:5000
 ### **Authentication Endpoints**
 #### Register
 POST /auth/register
+POST /auth/register
 {
-"nama": "string",
-"email": "string",
-"password": "string"
+  "nama": "string",
+  "email": "string",
+  "password": "string"
 }
-
+- Menjelaskan endpoint registrasi.
+- Data dikirim dalam format JSON.
+- Method POST digunakan untuk mengirim data baru.
+  
 #### Login
 POST /auth/login
 {
@@ -73,23 +77,34 @@ POST /auth/login
 ---
 
 ### **Inventaris Endpoints**
-
-#### Get All
 GET /inventaris
-
-#### Create
 POST /inventaris
-
-#### Update
 PUT /inventaris/{id}
-
-#### Delete
 DELETE /inventaris/{id}
+
+- GET → ambil data
+- POST → tambah data
+- PUT → update data berdasarkan ID
+- DELETE → hapus data berdasarkan ID
 
 ---
 
 ## 🧩 Struktur Folder
-
+lib/
+├── constants/
+│   └── app_constants.dart
+├── models/
+│   └── inventaris_model.dart
+├── screens/
+│   ├── auth/
+│   │   ├── login_screen.dart
+│   │   └── register_screen.dart
+│   └── inventory/
+│       ├── form_screen.dart
+│       └── home_screen.dart
+├── services/
+│   └── api_services.dart
+└── main.dart
 
 ---
 
@@ -132,38 +147,27 @@ DELETE /inventaris/{id}
 ### 1️⃣ Jalankan Backend
 Pastikan backend berjalan pada:
 http://localhost:5000
-### 2️⃣ Install Dependencies
+### 2️⃣ Jalankan Aplikasi
 flutter pub get
-
-shell
-Salin kode
-
-### 3️⃣ Jalankan Aplikasi
 flutter run
-
-shell
-Salin kode
-
-### 4️⃣ Build APK Release
 flutter build apk --release
 
-yaml
-Salin kode
-
+- Perintah CLI Flutter untuk menjalankan aplikasi.
+- flutter pub get → mengunduh dependency.
+- flutter run → menjalankan aplikasi.
+- flutter build apk → membuat file APK untuk di-install di Android.
 ---
 
 ## 📦 Dependencies (pubspec.yaml)
 
-```yaml
 dependencies:
   flutter:
     sdk: flutter
   http: ^1.1.0
-  cupertino_icons: ^1.0.8
 
-dev_dependencies:
-  flutter_lints: ^5.0.0
-🙌 Penutup
+- Ditulis dalam format YAML (indentasi penting!).
+- http digunakan untuk memanggil REST API.
+- cupertino_icons digunakan untuk ikon tambahan.
+---
+## 🙌 Penutup
 Aplikasi Inventaris Komputer ini dikembangkan oleh Yohana Des Ingrid Patricia Butarbutar sebagai bagian dari pembelajaran Flutter dan REST API dalam mata kuliah Pemrograman Mobile.
-
-
