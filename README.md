@@ -54,23 +54,29 @@ Demo mencakup:
 http://localhost:5500 
 
 ### **Authentication Endpoints**
-#### Register
+#### 🔐 Register
+**Endpoint:**
 POST /auth/register
-{
-"nama": "string",
-"email": "string",
-"password": "string"
-}
+    **Body (JSON):**
+    ```json
+    {
+      "nama": "string",
+      "email": "string",
+      "password": "string"
+    }
+  
 - Menjelaskan endpoint registrasi.
 - Data dikirim dalam format JSON.
 - Method POST digunakan untuk mengirim data baru.
-  
+
 #### Login
 POST /auth/login
-{
-"email": "string",
-"password": "string"
-}
+    {
+      "email": "string",
+      "password": "string"
+    }
+
+
 ---
 
 ### **Inventaris Endpoints**
